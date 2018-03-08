@@ -1,0 +1,11 @@
+title: Riemass blog
+description: "Hello. You are welcome to my blog. Yust trying to find my way in software development, mathematics and life. Feed free to enjoy some of my toughts."
+welcome_description: "Hello. You are welcome to my blog. Yust trying to find my way in software development, mathematics and life. Feed free to enjoy some of my toughts."
+twitter_username: samirhali
+github_username: riemass
+language: en
+post_limit: 3
+plugins: [jekyll-paginate]
+paginate_path: "/page/:num/"
+permalink: none
+markdown: kramdown
