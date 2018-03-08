@@ -1,0 +1,26 @@
+---
+layout: default
+---
+<h1>Welcome</h1>
+<p>{{ site.welcome_description }}</p>
+
+
+<h3>Newest posts:</h3>
+<ul class="entries">
+{% for post in site.posts | limit : site.post_limit %}
+	<li class="entry group">
+		<div class="entry-date">
+			<time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+		</div>
+		<div class="entry-title">
+			<h2>
+			<a class="post-link" href="{{ post.url }}">{{ post.title }}</a>
+			</h2>
+		</div>
+		<div class="entry-desc">
+		<p>{{ post.content | strip_html | truncatewords:75}}</p>
+		</div>
+	</li>
+	
+{% endfor %}
+</ul>
