@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Beggining of writing</title>
+		<meta name="description" content="Thr pen is mightier than the sword.">
+		<link rel="stylesheet" href="http://localhost:4000/style.css">
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Sanchez:400,400italic' rel='stylesheet' type='text/css'>
+		<link rel="canonical" href="http://localhost:4000/posts/Begining-of-writing.html">
+		<link rel="alternate" type="application/rss+xml" title="Samir's blog" href="http://localhost:4000/feed.xml">
+		<link rel="shortcut icon" href="http://localhost:4000/favicon.ico">
+		<link rel="apple-touch-icon" href="http://localhost:4000/apple-touch-icon.png">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+	</head>
+	<body>
+		<header class="site-header">
+			<nav>
+			<ul>
+				<li><a href="/" title="Samir's blog" rel="home">Home</a></li>
+				<li><a href="/archive.html">Archive</a></li>
+				<li><a href="/about.html">About</a></li>
+				<li><a href="/contact.html">Contact</a></li>
+			</ul>		
+			</nav>
+		
+			<h1>
+				<a class="site-title" href="/" title="Samir's blog" rel="home">Samir's blog</a>
+			</h1>
+		
+		</header>
+		<div class="content" role="main">
+			<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+	<header class="post-header">
+		<time class="post-date" datetime="2018-10-14T00:00:00+02:00">Oct 14, 2018</time>
+		<h1 class="post-title">Beggining of writing</h1>
+	</header>
+	<p>Thr pen is mightier than the sword.</p>
+
+<p>I’ve had the intent to start writing for some time now, but never got to it.</p>
+
+<p>Some of the first articles where half written quite some time ago. Main reasons
+for staring this blog are:</p>
+
+<ul>
+  <li>Learn to write better and express myself better. Having good grammar and ability 
+  to express yourself is a valuable skill as for personal and career opportunities. 
+  Dijkstra even went as far as to state that a good programmer has to have a 
+  nice handwriting. The silent people like myself have to cope with it somehow.</li>
+  <li>
+    <p>Learn to reason better and explain my ideas and arguments more axiomatically.</p>
+  </li>
+  <li>Indulge into the community of programmers</li>
+  <li>Note some interesting stuff so I don’t want forget it myself</li>
+</ul>
+
+<p>As i’ve taken the challenge of writing, I hope to make a scientific paper 
+by the end of the academic year, so my first topic will be reading as many 
+papers as I can and write a short summary on them here.</p>
+
+
+</article>
+<a id="go-top" href="#" onclick="scrollToTop();return false">&uarr;</a>
+		</div>
+		<footer class="site-footer">
+			<small class="copyright">Copyright &copy; Samir Halilčević</small>
+		</footer>
+		<script>
+			document.body.onscroll = function() {
+				var e = document.getElementById('go-top');
+				if (document.body.scrollTop !=0 || document.documentElement.scrollTop != 0) {
+					e.style.right = '.5em';
+				}
+				else e.style.right = '-1em';
+			}
+			var timeOut;
+			function scrollToTop() {
+				if (document.body.scrollTop !=0 || document.documentElement.scrollTop != 0) {
+					window.scrollBy(0,-50);
+					timeOut=setTimeout('scrollToTop()',5);
+				}
+				else clearTimeout(timeOut);
+			}
+		</script>
+	</body>
+</html>

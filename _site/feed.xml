@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Samir's blog</title>
+    <description>Hello. You are welcome to my blog. Trying to find my way in software development, mathematics and life. Feed free to enjoy some of my toughts.</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 14 Oct 2018 23:57:26 +0200</pubDate>
+    <lastBuildDate>Sun, 14 Oct 2018 23:57:26 +0200</lastBuildDate>
+    <generator>Jekyll v3.8.4</generator>
+    
+      <item>
+        <title>Beggining of writing</title>
+        <description>&lt;p&gt;Thr pen is mightier than the sword.&lt;/p&gt;
+
+&lt;p&gt;I’ve had the intent to start writing for some time now, but never got to it.&lt;/p&gt;
+
+&lt;p&gt;Some of the first articles where half written quite some time ago. Main reasons
+for staring this blog are:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Learn to write better and express myself better. Having good grammar and ability 
+  to express yourself is a valuable skill as for personal and career opportunities. 
+  Dijkstra even went as far as to state that a good programmer has to have a 
+  nice handwriting. The silent people like myself have to cope with it somehow.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Learn to reason better and explain my ideas and arguments more axiomatically.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Indulge into the community of programmers&lt;/li&gt;
+  &lt;li&gt;Note some interesting stuff so I don’t want forget it myself&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;As i’ve taken the challenge of writing, I hope to make a scientific paper 
+by the end of the academic year, so my first topic will be reading as many 
+papers as I can and write a short summary on them here.&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 14 Oct 2018 00:00:00 +0200</pubDate>
+        <link>http://localhost:4000/posts/Begining-of-writing.html</link>
+        <guid isPermaLink="true">http://localhost:4000/posts/Begining-of-writing.html</guid>
+        
+        
+        <category>posts</category>
+        
+      </item>
+    
+      <item>
+        <title>Fibbonacci(n) - part 1</title>
+        <description>&lt;p&gt;Test&lt;/p&gt;
+
+&lt;p&gt;Fibonnacci is so old, I dont have to write anything on it.&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;a^2 + b^2 = c^2&lt;/script&gt;
+
+&lt;p&gt;So what should we do about it?&lt;/p&gt;
+</description>
+        <pubDate>Thu, 08 Mar 2018 00:00:00 +0100</pubDate>
+        <link>http://localhost:4000/posts/Its-so-old.html</link>
+        <guid isPermaLink="true">http://localhost:4000/posts/Its-so-old.html</guid>
+        
+        
+        <category>posts</category>
+        
+      </item>
+    
+  </channel>
+</rss>

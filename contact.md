@@ -3,7 +3,9 @@ layout: default
 ---
 # Samir Halilčević
 
-Feel free to ping me at:
+Feel free to message me at:
 
-*samir dot halilcevic at fet dot ba*
+[Linkedin](https://www.linkedin.com/in/samir-halilčević-334822147)
+
+[Github](https://github.com/riemass)
 

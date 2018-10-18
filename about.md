@@ -3,12 +3,14 @@ layout: default
 ---
 # Samir Halilčević
 
-Writings on programming and stuff. Still in progress.
+Finding my way in software development, mathematics and life. Feed free to enjoy some of my toughts.
+Hardware is a platform for software. Mathematics is the soul. A good programmer
+need deep uderstanding of both.
 
-Primary use linux since 2014. C++ rocks. Falling in love with rust.
+Primary use linux since 2014. C++ programmer. Takes a liking in the Rust programming language recently.
 
-Student at the [Faculty of electrical engineering Tuzla](http://fet.ba)
-department of computer science.
+Bachelor of engineering at [Faculty of electrical engineering Tuzla](http://fet.ba).
 
-Intern at [marvelsoft.net](http://marvelsoft.net)
+Master student at [Faculty of electrical engineering Tuzla](http://fet.ba).
 
+Software engineer in the algo trading industry at [Marvelsoft](http://marvelsoft.net).
