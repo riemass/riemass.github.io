@@ -5,9 +5,98 @@
     <description>Hello. You are welcome to my blog. Trying to find my way in software development, mathematics and life. Feed free to enjoy some of my toughts.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 14 Oct 2018 23:57:26 +0200</pubDate>
-    <lastBuildDate>Sun, 14 Oct 2018 23:57:26 +0200</lastBuildDate>
+    <pubDate>Fri, 26 Oct 2018 05:56:16 +0200</pubDate>
+    <lastBuildDate>Fri, 26 Oct 2018 05:56:16 +0200</lastBuildDate>
     <generator>Jekyll v3.8.4</generator>
+    
+      <item>
+        <title>Part 1 - The UNIX Time-Sharing System</title>
+        <description>&lt;p&gt;I chose this as the first paper in this series because of the almost legendary impact
+of the Unix operating system. It has done so many things right and the basic ideas 
+are present event today, the paper dating from 1974, and Unix unoffitialy dating from 
+1969 (there is &lt;a href=&quot;https://spectrum.ieee.org/tech-history/cyberspace/the-strange-birth-and-long-life-of-unix&quot;&gt;this&lt;/a&gt; 
+awesome historical article that made me love the Unix team).&lt;/p&gt;
+
+&lt;p&gt;The paper lists all the nice things Unix has done right, and are still
+present today. The paper, consize and without much introduction, begins with 
+the simple IO interface, file system and redirections.&lt;/p&gt;
+
+&lt;p&gt;IO, basic redirections and program execution. 
+IO, pipes and shell. Multiuser environment and&lt;/p&gt;
+
+&lt;p&gt;As a matter of fact, reading this I appretiate the stable foundations of 
+Unix. A whole infrastructure build around a carefully selected set of ideas
+that build a bigger foundation.&lt;/p&gt;
+
+&lt;p&gt;References:
+The Strange Birth and Long Life of Unix
+&lt;a href=&quot;https://spectrum.ieee.org/tech-history/cyberspace/the-strange-birth-and-long-life-of-unix&quot;&gt;https://spectrum.ieee.org/tech-history/cyberspace/the-strange-birth-and-long-life-of-unix&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 26 Oct 2018 00:00:00 +0200</pubDate>
+        <link>http://localhost:4000/posts/UNIX-Time-Sharing-System.html</link>
+        <guid isPermaLink="true">http://localhost:4000/posts/UNIX-Time-Sharing-System.html</guid>
+        
+        
+        <category>posts</category>
+        
+      </item>
+    
+      <item>
+        <title>Part 2 - Fundamentals of Generic Programming</title>
+        <description>&lt;p&gt;I chose this paper purely because I wanted to read someting from Alexander Stepanov. 
+If you are a C++ programmer, and don’t know who he is, well
+if you’ve written std::vector&lt;int&gt;, that is this guys work.
+Writing a dynamic array was not his peak accomplishment, but writing a 
+library that utilizes his ideas of common type requirements.&lt;/int&gt;&lt;/p&gt;
+
+&lt;p&gt;After some time programming with templates, you begin to understand that
+every time you take a template parameter &lt;em&gt;T&lt;/em&gt; to write a function or class,
+you have expectations that the user provided type will 
+have common properties like comparison, ordering or the addition operator.&lt;/p&gt;
+
+&lt;p&gt;In this paper stepanov outlines the type requeirements as a axiomatic set and
+declares it as concepts.&lt;/p&gt;
+
+&lt;p&gt;The first concept, and most important one, used all over STL is that of a &lt;em&gt;Regular Type&lt;/em&gt;. 
+A type having his default constructor, copy constructor, destructor, assignment, equality, inequality
+and ordering. The simplest regular type is an int. The axioms of a regular type
+where formed for a type to behave as a integer.&lt;/p&gt;
+
+&lt;p&gt;Now let’s look at one of the axioms for assignmet.&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;T a = c; T b = c; a = d; assert(b == c);&lt;/script&gt;
+
+&lt;p&gt;This is the first time someone defined the assignment operator and equality operator
+in such a way. Humbly stated, we expect to modify the value of $a$ without changing the value of 
+$b$. This is in fact the definition of value semantics used in programming languages.&lt;/p&gt;
+
+&lt;p&gt;It’s a shame concepts did not make it in c++17.&lt;/p&gt;
+
+&lt;p&gt;EDIT:&lt;/p&gt;
+
+&lt;p&gt;Quote from a talk that came out recently:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The containers and algorithms that where a part of the 1998. STL where nothing
+   like the containers and algorithms libraries at the time.
+   Everybody knew that when you had a new container class you had to use inheritence
+   the algorithms had to be member functions of the class,&lt;/p&gt;
+
+  &lt;p&gt;&lt;em&gt;Sean Parent&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;References:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=iwJpxWHuZQY&quot;&gt;Sean Parents talk about generic programming&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 26 Oct 2018 00:00:00 +0200</pubDate>
+        <link>http://localhost:4000/posts/Generic-Programming.html</link>
+        <guid isPermaLink="true">http://localhost:4000/posts/Generic-Programming.html</guid>
+        
+        
+        <category>posts</category>
+        
+      </item>
     
       <item>
         <title>Beggining of writing</title>
@@ -38,25 +127,6 @@ papers as I can and write a short summary on them here.&lt;/p&gt;
         <pubDate>Sun, 14 Oct 2018 00:00:00 +0200</pubDate>
         <link>http://localhost:4000/posts/Begining-of-writing.html</link>
         <guid isPermaLink="true">http://localhost:4000/posts/Begining-of-writing.html</guid>
-        
-        
-        <category>posts</category>
-        
-      </item>
-    
-      <item>
-        <title>Fibbonacci(n) - part 1</title>
-        <description>&lt;p&gt;Test&lt;/p&gt;
-
-&lt;p&gt;Fibonnacci is so old, I dont have to write anything on it.&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;a^2 + b^2 = c^2&lt;/script&gt;
-
-&lt;p&gt;So what should we do about it?&lt;/p&gt;
-</description>
-        <pubDate>Thu, 08 Mar 2018 00:00:00 +0100</pubDate>
-        <link>http://localhost:4000/posts/Its-so-old.html</link>
-        <guid isPermaLink="true">http://localhost:4000/posts/Its-so-old.html</guid>
         
         
         <category>posts</category>

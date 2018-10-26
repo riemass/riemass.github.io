@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Part 2 - Fundamentals of Generic Programming</title>
+		<meta name="description" content="I chose this paper purely because I wanted to read someting from Alexander Stepanov. If you are a C++ programmer, and don’t know who he is, wellif you’ve wri...">
+		<link rel="stylesheet" href="http://localhost:4000/style.css">
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Sanchez:400,400italic' rel='stylesheet' type='text/css'>
+		<link rel="canonical" href="http://localhost:4000/posts/Generic-Programming.html">
+		<link rel="alternate" type="application/rss+xml" title="Samir's blog" href="http://localhost:4000/feed.xml">
+		<link rel="shortcut icon" href="http://localhost:4000/favicon.ico">
+		<link rel="apple-touch-icon" href="http://localhost:4000/apple-touch-icon.png">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+	</head>
+	<body>
+		<header class="site-header">
+			<nav>
+			<ul>
+				<li><a href="/" title="Samir's blog" rel="home">Home</a></li>
+				<li><a href="/archive.html">Archive</a></li>
+				<li><a href="/about.html">About</a></li>
+				<li><a href="/contact.html">Contact</a></li>
+			</ul>		
+			</nav>
+		
+			<h1>
+				<a class="site-title" href="/" title="Samir's blog" rel="home">Samir's blog</a>
+			</h1>
+		
+		</header>
+		<div class="content" role="main">
+			<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+	<header class="post-header">
+		<time class="post-date" datetime="2018-10-26T00:00:00+02:00">Oct 26, 2018</time>
+		<h1 class="post-title">Part 2 - Fundamentals of Generic Programming</h1>
+	</header>
+	<p>I chose this paper purely because I wanted to read someting from Alexander Stepanov. 
+If you are a C++ programmer, and don’t know who he is, well
+if you’ve written std::vector<int>, that is this guys work.
+Writing a dynamic array was not his peak accomplishment, but writing a 
+library that utilizes his ideas of common type requirements.</int></p>
+
+<p>After some time programming with templates, you begin to understand that
+every time you take a template parameter <em>T</em> to write a function or class,
+you have expectations that the user provided type will 
+have common properties like comparison, ordering or the addition operator.</p>
+
+<p>In this paper stepanov outlines the type requeirements as a axiomatic set and
+declares it as concepts.</p>
+
+<p>The first concept, and most important one, used all over STL is that of a <em>Regular Type</em>. 
+A type having his default constructor, copy constructor, destructor, assignment, equality, inequality
+and ordering. The simplest regular type is an int. The axioms of a regular type
+where formed for a type to behave as a integer.</p>
+
+<p>Now let’s look at one of the axioms for assignmet.</p>
+
+<script type="math/tex; mode=display">T a = c; T b = c; a = d; assert(b == c);</script>
+
+<p>This is the first time someone defined the assignment operator and equality operator
+in such a way. Humbly stated, we expect to modify the value of $a$ without changing the value of 
+$b$. This is in fact the definition of value semantics used in programming languages.</p>
+
+<p>It’s a shame concepts did not make it in c++17.</p>
+
+<p>EDIT:</p>
+
+<p>Quote from a talk that came out recently:</p>
+
+<blockquote>
+  <p>The containers and algorithms that where a part of the 1998. STL where nothing
+   like the containers and algorithms libraries at the time.
+   Everybody knew that when you had a new container class you had to use inheritence
+   the algorithms had to be member functions of the class,</p>
+
+  <p><em>Sean Parent</em></p>
+</blockquote>
+
+<p>References:</p>
+
+<p><a href="https://www.youtube.com/watch?v=iwJpxWHuZQY">Sean Parents talk about generic programming</a></p>
+
+</article>
+<a id="go-top" href="#" onclick="scrollToTop();return false">&uarr;</a>
+		</div>
+		<footer class="site-footer">
+			<small class="copyright">Copyright &copy; Samir Halilčević</small>
+		</footer>
+		<script>
+			document.body.onscroll = function() {
+				var e = document.getElementById('go-top');
+				if (document.body.scrollTop !=0 || document.documentElement.scrollTop != 0) {
+					e.style.right = '.5em';
+				}
+				else e.style.right = '-1em';
+			}
+			var timeOut;
+			function scrollToTop() {
+				if (document.body.scrollTop !=0 || document.documentElement.scrollTop != 0) {
+					window.scrollBy(0,-50);
+					timeOut=setTimeout('scrollToTop()',5);
+				}
+				else clearTimeout(timeOut);
+			}
+		</script>
+	</body>
+</html>
